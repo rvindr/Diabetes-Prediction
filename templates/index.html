@@ -11,6 +11,11 @@
     <header>
         <h1>Diabetes Prediction</h1>
     </header>
+    {% if error %}
+                    <div id='error' >
+                        Invalid input. Please make sure the form values are valid.
+                      </div>
+        {% endif %}
     <main>
         <section>
             <h2>Patient Information</h2>
