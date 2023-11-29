@@ -30,7 +30,7 @@ def index():
 
             return render_template('result.html', result = result, feature =features)
         except ValueError:
-            return 'Invalid input. Please make sure the form values are valid.'
+            return render_template('index.html', error = True)
     else:
         return render_template('index.html')
 
