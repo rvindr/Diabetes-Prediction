@@ -3,8 +3,8 @@ import pickle
 import numpy as np
 import pandas as pd
 
-application = Flask(__name__)
-app = application
+app = Flask(__name__)
+
 scaler = pickle.load(open('/config/workspace/Model/standardScaler.pkl', 'rb'))
 model = pickle.load(open('/config/workspace/Model/predictionModel.pkl', 'rb'))
 
