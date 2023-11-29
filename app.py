@@ -5,8 +5,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
-scaler = pickle.load(open('/config/workspace/Model/standardScaler.pkl', 'rb'))
-model = pickle.load(open('/config/workspace/Model/predictionModel.pkl', 'rb'))
+scaler = pickle.load(open('Model/standardScaler.pkl', 'rb'))
+model = pickle.load(open('Model/predictionModel.pkl', 'rb'))
 
 
 @app.route('/',  methods = ['GET','POST'])
