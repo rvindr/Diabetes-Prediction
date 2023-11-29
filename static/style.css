@@ -49,3 +49,7 @@ form {
 #resultSection {
     margin-top: 20px;
 }
+#error{
+    color:red;
+    text-align: center;
+}
