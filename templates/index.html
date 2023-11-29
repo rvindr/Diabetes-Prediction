@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <header>
+        <h1>Diabetes Prediction</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Patient Information</h2>
+            <form action="/" method="post">
+                <label for="pregnancies">Pregnancies:</label>
+                <input type="text" id="pregnancies" name="pregnancies" required>
+            
+                <br>
+            
+                <label for="glucose">Glucose:</label>
+                <input type="text" id="glucose" name="glucose" required>
+            
+                <br>
+            
+                <label for="bloodPressure">Blood Pressure:</label>
+                <input type="text" id="bloodPressure" name="bloodPressure" required>
+            
+                <br>
+            
+                <label for="skinThickness">Skin Thickness:</label>
+                <input type="text" id="skinThickness" name="skinThickness" required>
+            
+                <br>
+            
+                <label for="insulin">Insulin:</label>
+                <input type="text" id="insulin" name="insulin" required>
+            
+                <br>
+            
+                <label for="bmi">BMI:</label>
+                <input type="text" id="bmi" name="bmi" required>
+            
+                <br>
+            
+                <label for="diabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+                <input type="text" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction" required>
+            
+                <br>
+            
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            
+                <br>
+            
+                <input id='submit' type="submit" value="Submit">
+              </form>
+        </section>
+    </main>
+</body>
+</html>
